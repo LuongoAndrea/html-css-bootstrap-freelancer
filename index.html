@@ -11,24 +11,24 @@
     <title class="">Start Boostrap</title>
 </head>
 <body>
-    <header>
-        <div class="wrapper fixed-top">
+    <header class="fixed-top">
+        <div class="wrapper">
             <nav class="navbar navbar-expand-sm navbar-dark">
-                <div class="container-fluid">
+                <div class="container-md">
                     <span class="navbar-brand mb-0 h1 text-uppercase">start boostrap</span>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                      <ul class="navbar-nav text-uppercase">
+                      <ul class="navbar-nav text-uppercase ms-auto">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">portfolio</a>
+                          <a class="nav-link active" aria-current="page" href="#portfolio">portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">about</a>
+                            <a class="nav-link active" aria-current="page" href="#about">about</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">contact</a>
+                            <a class="nav-link active" aria-current="page" href="#contact">contact</a>
                           </li>
                       </ul>
                     </div>
@@ -38,18 +38,18 @@
     </header>
     <section id="hero" class="center">
         <div class="wrapper text-uppercase center">
-            <div class="img-hero">
+            <div class="img-hero padding-bottom">
                 <img src="./img/avatar.svg" alt="">
             </div>
-            <div>
+            <div class="padding-bottom">
                 <h1>start boostrap</h1>
             </div>
-            <div class="star d-flex">
+            <div class="star d-flex padding-bottom">
                 <div></div>
                 <h2><i class="fa-solid fa-star"></i></h2>
                 <div></div>
             </div>
-            <div>
+            <div class="padding-bottom">
                 <span>graphic artist-web designer-illustrator</span>
             </div>
         </div>
@@ -68,22 +68,41 @@
                 <span>graphic artist-web designer-illustrator</span>
             </div>
             <div class="cards-img d-flex">
-                <div class="img-portfolio">
+                <div class="img-portfolio m-2">
                     <img src="./img/cabin.png" alt="">
+                    <div class="plus">
+                        <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
                 </div>
-                <div class="img-portfolio">
+                <div class="img-portfolio m-2">
                     <img src="./img/cake.png" alt="">
+                    <div class="plus">
+                        <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
                 </div>
-                <div class="img-portfolio">
+                <div class="img-portfolio m-2">
                     <img src="./img/circus.png" alt=""></div>
-                <div class="img-portfolio">
+                    <div class="plus">
+                        <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                </div>
+                <div class="img-portfolio m-2">
                     <img src="./img/game.png" alt="">
+                    <div class="plus">
+                        <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
                 </div>
-                <div class="img-portfolio">
+                <div class="img-portfolio m-2">
                     <img src="./img/safe.png" alt="">
+                    <div class="plus">
+                        <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
                 </div>
-                <div class="img-portfolio">
+                <div class="img-portfolio m-2">
                     <img src="./img/submarine.png" alt="">
+                    <div class="plus">
+                        <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -121,19 +140,38 @@
                 <h2><i class="fa-solid fa-star"></i></h2>
                 <div></div>
             </div>
+            <form action="">
+                <div class="form-floating mb-3 text-capitalize">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name">
+                    <label for="floatingInput">name</label>
+                </div>
+                <div class="form-floating mb-3 text-capitalize">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating text-capitalize">
+                    <input type="text" class="form-control" id="floatingnumber" placeholder="number">
+                    <label for="floatingnumber">phone number</label>
+                </div>
+                <div class="form-floating text-capitalize">
+                    <textarea id="message" name="w3review" rows="4" cols="50"></textarea>
+                    <label for="floatingnumber">message</label>
+                </div>
+                    <button type="button" class="btn btn-success">Send</button>
+                </div>
+            </form>
             
-        </div>
     </section>
     <footer>
-        <section class="center">
-            <div class="wrapper center padding">
+        <section>
+            <div>
                 <div class="center">
                     <h3 class="text-uppercase">location</h3>
                     <span class="text-capitalize">2215 john daniel drive clark, mo 54243</span>
                 </div>
                 <div class="center">
                     <h3 class="text-uppercase">around the web</h3>
-                    <div class="icon d-flex">
+                    <div class="icon">
                         <div class="social-icon"><span><i class="fa-brands fa-facebook-f"></i></span></div>
                         <div class="social-icon"><span><i class="fa-brands fa-google-plus-g"></i></span></div>
                         <div class="social-icon"><span><i class="fa-brands fa-twitter"></i></span></div>
@@ -142,7 +180,7 @@
                 </div>
                 <div class="center">
                     <h3 class="text-uppercase">about freelancer</h3>
-                    <p class="text-capitalize">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, <a class="green-a" href="#">star boostrap</a></p>
+                    <p class="text-capitalize text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, <a class="green-a" href="#">star boostrap</a></p>
                 </div>
             </div>
         </section>
